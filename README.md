@@ -1,8 +1,15 @@
-# **GPT 4 Chat UI**
+# GPT4 Chat Graphical User Interface
 
-This project is a simple React-based chat interface that uses Next.js and communicates with OpenAI's GPT-4 (or GPT-3.5-turbo) language model to generate responses.
+> [!NOTE]
+> This project is a simple React-based chat interface that uses Next.js and communicates with OpenAI's GPT-4 (or GPT-3.5-turbo) language model to generate responses.
 
-## **Features**
+<details><summary>View Screenshot 📷</summary><p>
+
+![image](https://github.com/jimbrig/gpt4gui/assets/32652297/23776027-aacc-4add-b4dc-1f1343ccfe59)
+
+</p></summary></details>
+
+## Features
 
 - Responsive chat interface
 - Auto-scroll to the latest message
@@ -10,16 +17,16 @@ This project is a simple React-based chat interface that uses Next.js and commun
 - OpenAI GPT-4 integration
 - Loading indicator during API requests
 
-## **Getting Started**
+## Usage
 
 These instructions will help you set up the project on your local machine.
 
-### **Prerequisites**
+### Prerequisites
 
-- Node.js >= 14.x
+- Node.js (>= 14.x)
 - npm
 
-### **Dependencies**
+### Dependencies
 
 - **`@emotion/react`**: ^11.10.6
 - **`@emotion/styled`**: ^11.10.6
@@ -36,55 +43,51 @@ These instructions will help you set up the project on your local machine.
 - **`react-markdown`**: ^8.0.6
 - **`typescript`**: 5.0.2
 
-### **Installation**
+### Installation
 
 1. Clone the repository:
 
-```
+```bash
+# GitHub CLI
+gh repo clone jimbrig/gpt4gui
 
-git clone https://github.com/hillis/gpt-4-chat-ui.git
+# SSH
+git clone git@github.com:jimbrig/gpt4gui.git
 
+# HTTPS
+git clone https://github.com/jimbrig/gpt4gui.git
 ```
 
 1. Change to the project directory:
 
-```
-
-cd gpt-4-chat-ui
-
+```bash
+cd gpt4gui
 ```
 
 1. Install dependencies:
 
 
-```
-
+```bash
 npm install
-
 ```
 
-1. Add your OpenAI API key to a **`.env`** file:
+1. Create `.env` and add your OpenAI API Key (`OPENAI_API_KEY`):
 
-```
-envCopy code
-OPENAI_API_KEY=your_openai_api_key_here
-
-```
-
-Make sure to replace **`your_openai_api_key_here`** with your actual OpenAI API key.
-
-1. Run the development server:
-
-
+```bash
+touch .env
+echo "envCopy code" >> .env
+echo "OPENAI_API_KEY=<KEY>" >> .env
 ```
 
+1. Run local development server:
+
+```bash
 npm run dev
-
 ```
 
 Now you can open your browser and navigate to **`http://localhost:3000`** to see the chat interface in action.
 
-## **Deployment**
+## Deployment
 
 To deploy the application, follow the **[Next.js deployment documentation](https://nextjs.org/docs/deployment)**.
 
@@ -94,12 +97,8 @@ To deploy the application, follow the **[Next.js deployment documentation](https
 - **[TypeScript](https://www.typescriptlang.org/)** - The programming language used
 - **[OpenAI API](https://beta.openai.com/docs/)** - The AI language model used
 
-## **Contributing**
-Used Template and converted to Typescript
-Frontend of this repo is inspired by langchain-chat-nextjs **[LangChain-Chat-NextJS](https://github.com/zahidkhawaja/langchain-chat-nextjs)**
+## Acknowledgements
 
-
-
-## **License**
-
-This project is licensed under the MIT License - 
+- Completely based off original solution from <https://github.com/hillis/gpt-4-chat-ui> 
+- Used Template and converted to Typescript
+- Frontend of this repo is inspired by langchain-chat-nextjs **[LangChain-Chat-NextJS](https://github.com/zahidkhawaja/langchain-chat-nextjs)**
